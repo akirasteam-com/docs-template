@@ -13,8 +13,11 @@ $context = stream_context_create([
     ]
 ]);
 
-$response = file_get_contents($repoUrl, false, $context);
+$response = file_get_contents("https://api.github.com/repos/akirasteam-com/docs-publications/contents/pages", false, $context);
 $files = json_decode($response, true);
+if ($files === null) {
+    $files = [];
+}
 
 $page = $_GET['page'] ?? null;
 $fileContent = '';
