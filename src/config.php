@@ -23,15 +23,14 @@
 return [
     'repoUrl' => 'https://api.github.com/repos/akirasteam-com/docs.akirasteam.com/contents/pages',
     'site' => [
-        'name' => 'AkirasTeam Documentation',
-        'url' => 'https://docs.akirasteam.com',
-        'update' => 'https://docs.akirasteam.com/',
-        'contact_email' => 'contact@akirasteam.com',
+        'name' => 'YourSiteName',
+        'url' => 'YourSiteURL',
+        'contact_email' => 'YourContactEmail',
     ],
     'links' => [
-        'github' => 'https://github.com/akirasteam-com/docs.akirasteam.com',
-        'twitter' => 'https://twitter.com/akirasteam_',
-        'instagram' => 'https://instagram.com/akirasteamcom',
+        'github' => 'YourGitHubURL',
+        'twitter' => 'YourTwitterURL',
+        'instagram' => 'YourInstagramURL',
     ],
 ];
 ?>
