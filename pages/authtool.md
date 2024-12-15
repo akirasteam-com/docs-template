@@ -15,7 +15,7 @@ To get started with AuthTool, follow these steps:
 
 ### 1. Application Registration
 
-1. Register your application on the [AkirasTeam platform](https://app.akirasteam.com/).
+1. Register your application on the [AkirasTeam platform](https://app.akirasteam.com/authtool/).
 2. Obtain your `app_id` and `redirect_uri`.
 
 ### 2. Integrate AuthTool Script
