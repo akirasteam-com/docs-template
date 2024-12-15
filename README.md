@@ -1,60 +1,60 @@
 # docs.akirasteam.com
 
-Bienvenue dans la documentation de `docs.akirasteam.com`. Ce guide vous expliquera comment configurer et utiliser le système de documentation basé sur GitHub et PHP.
+Welcome to the documentation for `docs.akirasteam.com`. This guide will explain how to set up and use the documentation system based on GitHub and PHP.
 
-## Table des Matières
+## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Prérequis](#prérequis)
+2. [Prerequisites](#prerequisites)
 3. [Installation](#installation)
 4. [Configuration](#configuration)
-5. [Utilisation](#utilisation)
-6. [Structure des Fichiers](#structure-des-fichiers)
-7. [Personnalisation](#personnalisation)
-8. [Dépannage](#dépannage)
-9. [Contribuer](#contribuer)
-10. [Licence](#licence)
+5. [Usage](#usage)
+6. [File Structure](#file-structure)
+7. [Customization](#customization)
+8. [Troubleshooting](#troubleshooting)
+9. [Contributing](#contributing)
+10. [License](#license)
 
 ## Introduction
 
-`docs.akirasteam.com` est un système de documentation simple et efficace qui récupère et affiche dynamiquement les fichiers Markdown depuis un dépôt GitHub. Il utilise PHP et la bibliothèque Parsedown pour convertir le Markdown en HTML.
+`docs.akirasteam.com` is a simple and efficient documentation system that dynamically fetches and displays Markdown files from a GitHub repository. It uses PHP and the Parsedown library to convert Markdown to HTML.
 
-## Prérequis
+## Prerequisites
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants :
+Before you begin, make sure you have the following:
 
-- Un serveur web (Apache, Nginx, etc.)
-- PHP 7.4 ou supérieur
-- Composer (pour gérer les dépendances PHP)
-- Un compte GitHub
+- A web server (Apache, Nginx, etc.)
+- PHP 7.4 or higher
+- Composer (to manage PHP dependencies)
+- A GitHub account
 
 ## Installation
 
-Suivez ces étapes pour installer le système de documentation :
+Follow these steps to install the documentation system:
 
-1. Clonez le dépôt GitHub :
+1. Clone the GitHub repository:
 
     ```bash
     git clone https://github.com/akirasteam-com/docs.akirasteam.com.git
     ```
 
-2. Accédez au répertoire du projet :
+2. Navigate to the project directory:
 
     ```bash
     cd docs.akirasteam.com
     ```
 
-3. Installez les dépendances PHP avec Composer :
+3. Install PHP dependencies with Composer:
 
     ```bash
     composer install
     ```
 
-4. Configurez votre serveur web pour pointer vers le répertoire `docs.akirasteam.com`.
+4. Configure your web server to point to the `docs.akirasteam.com` directory.
 
 ## Configuration
 
-1. Créez un fichier de configuration `config.php` dans le répertoire [src](http://_vscodecontentref_/1) :
+1. Create a configuration file `config.php` in the [src](http://_vscodecontentref_/1) directory:
 
     ```php
     // filepath: /C:/xampp/htdocs/docs.akirasteam.com/src/config.php
@@ -69,23 +69,23 @@ Suivez ces étapes pour installer le système de documentation :
     ];
     ```
 
-2. Assurez-vous que le fichier `Parsedown.php` est présent dans le répertoire [libs](http://_vscodecontentref_/2).
+2. Ensure the `Parsedown.php` file is present in the [libs](http://_vscodecontentref_/2) directory.
 
-## Utilisation
+## Usage
 
-1. Ajoutez des fichiers Markdown (`.md`) dans le dossier `pages` de votre dépôt GitHub.
+1. Add Markdown (`.md`) files to the `pages` folder of your GitHub repository.
 
-2. Accédez à votre site de documentation via votre navigateur web. Par exemple :
+2. Access your documentation site via your web browser. For example:
 
     ```
     http://localhost/docs.akirasteam.com
     ```
 
-3. Utilisez le menu latéral pour naviguer entre les différentes pages de documentation.
+3. Use the sidebar menu to navigate between different documentation pages.
 
-## Structure des Fichiers
+## File Structure
 
-Voici la structure des fichiers du projet :
+Here is the project file structure:
 ```fix
 docs.akirasteam.com/
 ├── index.php
@@ -98,39 +98,38 @@ docs.akirasteam.com/
 └── README.md
 ```
 
+## Customization
 
-## Personnalisation
+You can customize the style and content of the documentation by modifying the following files:
 
-Vous pouvez personnaliser le style et le contenu de la documentation en modifiant les fichiers suivants :
+- **CSS**: Edit the `src/css/global_style.css` file to change the documentation style.
+- **Configuration**: Edit the [config.php](http://_vscodecontentref_/3) file to change site settings.
+- **Pages**: Add or modify Markdown files in the `pages` folder of your GitHub repository.
 
-- **CSS** : Modifiez le fichier `src/css/global_style.css` pour changer le style de la documentation.
-- **Configuration** : Modifiez le fichier [config.php](http://_vscodecontentref_/3) pour changer les paramètres du site.
-- **Pages** : Ajoutez ou modifiez les fichiers Markdown dans le dossier `pages` de votre dépôt GitHub.
+## Troubleshooting
 
-## Dépannage
+### Common Issues
 
-### Problèmes Courants
+1. **404 Error**: Ensure your web server is correctly configured to point to the `docs.akirasteam.com` directory.
+2. **Dependency Issues**: Make sure you have run `composer install` to install PHP dependencies.
 
-1. **Erreur 404** : Assurez-vous que votre serveur web est correctement configuré pour pointer vers le répertoire `docs.akirasteam.com`.
-2. **Problèmes de dépendances** : Assurez-vous d'avoir exécuté `composer install` pour installer les dépendances PHP.
+### Logs and Debugging
 
-### Logs et Debugging
+- Check your web server logs for error messages.
+- Use PHP debugging tools to identify issues.
 
-- Vérifiez les logs de votre serveur web pour des messages d'erreur.
-- Utilisez des outils de debugging PHP pour identifier les problèmes.
+## Contributing
 
-## Contribuer
+We welcome contributions from the community! To contribute:
 
-Nous accueillons les contributions de la communauté ! Pour contribuer :
+1. Fork the repository.
+2. Create a branch for your feature or bug fix.
+3. Submit a pull request with a detailed description of your changes.
 
-1. Forkez le dépôt.
-2. Créez une branche pour votre fonctionnalité ou correction de bug.
-3. Soumettez une pull request avec une description détaillée de vos changements.
+## License
 
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ---
 
-© 2024 AkirasTeam. Tous droits réservés.
+© 2024 AkirasTeam. All rights reserved.
