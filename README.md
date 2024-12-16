@@ -1,6 +1,6 @@
-# docs.akirasteam.com
+# Docs Template
 
-Welcome to the documentation for `docs.akirasteam.com`. This guide will explain how to set up and use the documentation system based on GitHub and PHP.
+Welcome to the documentation for `docs-template`. This guide will explain how to set up and use the documentation system based on GitHub and PHP.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Welcome to the documentation for `docs.akirasteam.com`. This guide will explain 
 
 ## Introduction
 
-`docs.akirasteam.com` is a simple and efficient documentation system that dynamically fetches and displays Markdown files from a GitHub repository. It uses PHP and the Parsedown library to convert Markdown to HTML.
+`docs-template` is a simple and efficient documentation system that dynamically fetches and displays Markdown files from a GitHub repository. It uses PHP and the Parsedown library to convert Markdown to HTML.
 
 ## Prerequisites
 
@@ -35,13 +35,13 @@ Follow these steps to install the documentation system:
 1. Clone the GitHub repository:
 
     ```bash
-    git clone https://github.com/akirasteam-com/docs.akirasteam.com.git
+    git clone https://github.com/akirasteam-com/docs-template.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd docs.akirasteam.com
+    cd docs-template
     ```
 
 3. Install PHP dependencies with Composer:
@@ -50,22 +50,22 @@ Follow these steps to install the documentation system:
     composer install
     ```
 
-4. Configure your web server to point to the `docs.akirasteam.com` directory.
+4. Configure your web server to point to the `docs-template` directory.
 
 ## Configuration
 
 1. Create a configuration file `config.php` in the [src](http://_vscodecontentref_/1) directory:
 
     ```php
-    // filepath: /C:/xampp/htdocs/docs.akirasteam.com/src/config.php
+    // filepath: /C:/xampp/htdocs/docs-template/src/config.php
     <?php
     return [
         'site' => [
-            'name' => 'Docs.AkirasTeam.com',
-            'url' => 'http://localhost/docs.akirasteam.com',
+            'name' => 'docs-template',
+            'url' => 'http://localhost/docs-template',
             'contact_email' => 'contact@akirasteam.com'
         ],
-        'repoUrl' => 'https://api.github.com/repos/akirasteam-com/docs.akirasteam.com/contents/pages'
+        'repoUrl' => 'https://api.github.com/repos/akirasteam-com/docs-template/contents/pages'
     ];
     ```
 
@@ -78,7 +78,7 @@ Follow these steps to install the documentation system:
 2. Access your documentation site via your web browser. For example:
 
     ```
-    http://localhost/docs.akirasteam.com
+    http://localhost/docs-template
     ```
 
 3. Use the sidebar menu to navigate between different documentation pages.
@@ -87,7 +87,7 @@ Follow these steps to install the documentation system:
 
 Here is the project file structure:
 ```fix
-docs.akirasteam.com/
+docs-template/
 ├── index.php
 ├── src/
 │ ├── config.php 
@@ -110,7 +110,7 @@ You can customize the style and content of the documentation by modifying the fo
 
 ### Common Issues
 
-1. **404 Error**: Ensure your web server is correctly configured to point to the `docs.akirasteam.com` directory.
+1. **404 Error**: Ensure your web server is correctly configured to point to the `docs-template` directory.
 
 ### Logs and Debugging
 
