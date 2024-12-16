@@ -103,7 +103,7 @@ docs.akirasteam.com/
 You can customize the style and content of the documentation by modifying the following files:
 
 - **CSS**: Edit the `src/css/global_style.css` file to change the documentation style.
-- **Configuration**: Edit the [config.php](http://_vscodecontentref_/3) file to change site settings.
+- **Configuration**: Edit the [config.php](#) file to change site settings.
 - **Pages**: Add or modify Markdown files in the `pages` folder of your GitHub repository.
 
 ## Troubleshooting
@@ -111,7 +111,6 @@ You can customize the style and content of the documentation by modifying the fo
 ### Common Issues
 
 1. **404 Error**: Ensure your web server is correctly configured to point to the `docs.akirasteam.com` directory.
-2. **Dependency Issues**: Make sure you have run `composer install` to install PHP dependencies.
 
 ### Logs and Debugging
 
